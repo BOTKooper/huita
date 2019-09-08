@@ -3,7 +3,7 @@ using Ozerov.Lab01.Task02.ClassLib;
 
 namespace Task02.ConsoleApp
 {
-    internal class Program
+    internal static class Program
     {
         public static void Main(string[] args)
         {

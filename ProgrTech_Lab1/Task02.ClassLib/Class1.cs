@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Ozerov.Lab01.Task02.ClassLib
 {
     public class File
@@ -8,18 +9,19 @@ namespace Ozerov.Lab01.Task02.ClassLib
         private int owner;
         private DateTime timeOfCreation;
         private DateTime timeOfEditing;
-        
-        public void Print(){
-            Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("Size: {0}", size);
-            Console.WriteLine("Owner: {0}", owner);
-            Console.WriteLine("Creation: {0}", timeOfCreation);
-            Console.WriteLine("Editing: {0}", timeOfEditing);
+
+        public void Print()
+        {
+            Console.WriteLine("Name: {0}" +
+                              "Size: {1}" +
+                              "Owner: {2}" +
+                              "Creation: {3}" +
+                              "Editing: {4}", name, size, owner, timeOfCreation, timeOfEditing);
         }
 
-        public void setName(string Name)
+        public void setName(string name)
         {
-            name = Name;
+            this.name = name;
         }
 
         public string getName()
@@ -27,9 +29,9 @@ namespace Ozerov.Lab01.Task02.ClassLib
             return name;
         }
 
-        public void setSize(int Size)
+        public void setSize(int size)
         {
-            size = Size;
+            this.size = size;
         }
 
         public int getSize()
@@ -37,9 +39,9 @@ namespace Ozerov.Lab01.Task02.ClassLib
             return size;
         }
 
-        public void setOwner(int Owner)
+        public void setOwner(int owner)
         {
-            owner = Owner;
+            this.owner = owner;
         }
 
         public int getOwner()
@@ -47,18 +49,19 @@ namespace Ozerov.Lab01.Task02.ClassLib
             return owner;
         }
 
-        public void setTimeOfCreation(DateTime time)
+        public void setTimeOfCreation(DateTime timeOfCreation)
         {
-            timeOfCreation = time;
-        }
-
-        public void setTimeOfEditing(DateTime time){
-            timeOfEditing = time;
+            this.timeOfCreation = timeOfCreation;
         }
 
         public DateTime getTimeOfCreation()
         {
             return timeOfCreation;
+        }
+
+        public void setTimeOfEditing(DateTime timeOfEditing)
+        {
+            this.timeOfEditing = timeOfEditing;
         }
 
         public DateTime getTimeOfEditing()
