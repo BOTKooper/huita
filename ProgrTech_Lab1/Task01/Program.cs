@@ -5,6 +5,11 @@ namespace Task01
     {
         public static void Main(string[] args)
         {
+            Console.SetWindowSize(400, 400);
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Title = "Custom title"; 
+            Console.Beep();
             Console.WriteLine("Input your name:");
             string s = Console.ReadLine();
             Console.WriteLine(("Hello, {0}"), s);
