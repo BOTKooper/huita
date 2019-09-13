@@ -12,10 +12,10 @@ namespace Ozerov.Lab01.Task02.ClassLib
 
         public void Print()
         {
-            Console.WriteLine("Name: {0}" +
-                              "Size: {1}" +
-                              "Owner: {2}" +
-                              "Creation: {3}" +
+            Console.WriteLine("Name: {0}\n" +
+                              "Size: {1}\n" +
+                              "Owner: {2}\n" +
+                              "Creation: {3}\n" +
                               "Editing: {4}", name, size, owner, timeOfCreation, timeOfEditing);
         }
 
