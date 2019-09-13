@@ -17,6 +17,6 @@ namespace Task01
             Console.WriteLine("Today is {0}, {1:D2}.{2:D2}.{3:D2}", dt.DayOfWeek, dt.Day, dt.Month, dt.Year);
             Console.WriteLine("Time: {0:D2}:{1:D2}:{2:D2}", dt.Hour, dt.Minute, dt.Second);
             Console.WriteLine("To NewYear: {0} days",  ( ( new DateTime(dt.Year, 12, 31)  ).Date - dt.Date).TotalDays  );
-        }
+}
     }
 }
