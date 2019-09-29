@@ -1,0 +1,51 @@
+<Project>
+  <Name>Ozerov.Lab02</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>HomeAppliences</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>YogurtMaker</Name>
+        <Access>Public</Access>
+        <Location left="51" top="65" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public static int ID = 0</Member>
+        <Member type="Field">public int id</Member>
+        <Member type="Field">private int powerOn</Member>
+        <Member type="Field">public int PowerOn</Member>
+        <Member type="Field">private int currentMode</Member>
+        <Member type="Field">private int CurrentMode</Member>
+        <Member type="Field">private string brand = "NoName"</Member>
+        <Member type="Field">public string Brand</Member>
+        <Member type="Field">private string model = "NoName"</Member>
+        <Member type="Field">public string Model</Member>
+        <Member type="Method">public void OffOn()</Member>
+        <Member type="Method">public void ModeSet()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>State</Name>
+        <Access>Public</Access>
+        <Location left="280" top="79" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>powerOn</Value>
+        <Value>yogurt</Value>
+        <Value>cheese</Value>
+        <Value>sourCream</Value>
+        <Value>curd</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
